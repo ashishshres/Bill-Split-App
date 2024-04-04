@@ -11,3 +11,18 @@ body {
   background-color: #222831;
   color: #eeeeee;
 }
+
+header,
+main {
+  text-align: center;
+  padding: 25px;
+}
+
+main {
+  margin: 2px auto;
+  max-width: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
