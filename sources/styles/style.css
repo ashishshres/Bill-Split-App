@@ -43,3 +43,101 @@ main {
   gap: 45px;
   padding: 40px;
 }
+
+label {
+  font-size: 1.25rem;
+  align-self: start;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.amount-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: 1px solid #777;
+  border-radius: 4px;
+  background-color: #222;
+}
+
+.amount-container > span {
+  padding: 5px;
+  font-size: 1.3rem;
+}
+
+.input-container input {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+
+.tip-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tip-btns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+button {
+  background-color: #535c91;
+  color: #fff;
+  border: 2px solid transparent;
+  padding: 15px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #3e456e;
+}
+
+button:active {
+  border: 2px solid salmon;
+}
+
+.people-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+input {
+  font-size: 1rem;
+  padding: 7px;
+  border: none;
+  outline: none;
+  background-color: #222831;
+  color: #fff;
+  border: 1px solid #888;
+  background-color: #222;
+  border-radius: 4px;
+}
+
+.total-amount {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.output {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
