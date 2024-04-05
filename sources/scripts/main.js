@@ -15,3 +15,11 @@ let generateBill = document.querySelector(".generate-bill");
 // values
 let inputAmountVal = parseFloat(inputAmount.value);
 let tipAmountVal = 0;
+
+tipBtns.forEach((tipbtn) => {
+  tipbtn.addEventListener("click", (e) => {
+    tipAmountVal = parseFloat(e.target.value);
+    customTip.value = "";
+    console.log(tipAmountVal);
+  });
+});
