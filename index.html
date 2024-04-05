@@ -18,18 +18,18 @@
                 <label>Bill</label>
                 <div class="amount-container">
                     <span>रु</span>
-                    <input type="text" placeholder="Enter amount">
+                    <input type="text" placeholder="Enter amount" id="input-amount">
                 </div>
             </div>
             <div class="tip-container">
                 <label>Select Tip</label>
                 <div class="tip-btns">
-                    <button>5%</button>
-                    <button>10%</button>
-                    <button>15%</button>
-                    <button>25%</button>
-                    <button>50%</button>
-                    <button>75%</button>
+                    <button value="5">5%</button>
+                    <button value="10">10%</button>
+                    <button value="15">15%</button>
+                    <button value="25">25%</button>
+                    <button value="50">50%</button>
+                    <button value="75">75%</button>
                 </div>
                 <input type="text" name="" id="custom-tip" placeholder="Custom Tip">
             </div>
@@ -37,6 +37,7 @@
                 <label>Number Of People</label>
                 <input type="text" name="" id="people" placeholder="1">
             </div>
+            <button class="generate-bill">Generate Bill</button>
         </div>
         <div class="bill-output">
             <div class="total-amount">
@@ -53,7 +54,7 @@
                     <span class="person-bill"></span>
                 </div>
             </div>
-            <button>Reset</button>
+            <button class="reset-btn">Reset</button>
         </div>
     </main>
     <script src="./sources/scripts/main.js"></script>
