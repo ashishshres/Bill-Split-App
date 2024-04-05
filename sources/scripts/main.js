@@ -58,11 +58,7 @@ function renderOutput() {
 }
 
 generateBill.addEventListener("click", () => {
-  if (
-    inputAmount.value === "" ||
-    customTip.value === "" ||
-    people.value === ""
-  ) {
+  if (inputAmount.value === "" || people.value === "") {
     alert("Empty input fields");
   } else {
     renderOutput();
