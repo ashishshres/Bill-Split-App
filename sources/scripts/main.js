@@ -15,10 +15,15 @@ let generateBill = document.querySelector(".generate-bill");
 // values
 let inputAmountVal = parseFloat(inputAmount.value);
 let tipAmountVal = 0;
+let buttons = document.querySelectorAll(".tip-btns button");
 
 tipBtns.forEach((tipbtn) => {
   tipbtn.addEventListener("click", (e) => {
+    buttons.forEach((btn) => {
+      btn.style.border = "2px solid transparent";
+    });
     tipAmountVal = parseFloat(e.target.value);
+    e.target.style.border = "2px solid salmon";
     customTip.value = "";
     console.log(tipAmountVal);
   });
@@ -81,4 +86,7 @@ function resetBill() {
   customTip.value = "";
   people.value = "";
   tipAmountVal = "";
+  buttons.forEach((btn) => {
+    btn.style.border = "2px solid transparent";
+  });
 }
