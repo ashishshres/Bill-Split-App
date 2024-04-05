@@ -109,6 +109,10 @@ button:active {
   border: 2px solid salmon;
 }
 
+button:focus {
+  border: 2px solid salmon;
+}
+
 .people-container {
   display: flex;
   flex-direction: column;
