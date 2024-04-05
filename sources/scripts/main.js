@@ -56,3 +56,15 @@ function renderOutput() {
   totalValue.textContent = totalBill();
   personBill.textContent = perPersonBill();
 }
+
+generateBill.addEventListener("click", () => {
+  if (
+    inputAmount.value === "" ||
+    customTip.value === "" ||
+    people.value === ""
+  ) {
+    alert("Empty input fields");
+  } else {
+    renderOutput();
+  }
+});
