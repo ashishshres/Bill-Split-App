@@ -68,3 +68,17 @@ generateBill.addEventListener("click", () => {
     renderOutput();
   }
 });
+
+// reset the fields
+let resetBtn = document.querySelector(".reset-btn");
+
+resetBtn.addEventListener("click", resetBill);
+
+function resetBill() {
+  tipValue.textContent = "";
+  totalValue.textContent = "";
+  personBill.textContent = "";
+  inputAmount.value = "";
+  customTip.value = "";
+  people.value = "";
+}
