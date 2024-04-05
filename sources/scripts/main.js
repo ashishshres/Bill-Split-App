@@ -49,3 +49,10 @@ function totalBill() {
 function perPersonBill() {
   return (totalBill() / parseInt(people.value)).toFixed(2);
 }
+
+// render output
+function renderOutput() {
+  tipValue.textContent = totalTipAmount();
+  totalValue.textContent = totalBill();
+  personBill.textContent = perPersonBill();
+}
