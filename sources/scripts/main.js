@@ -26,9 +26,12 @@ tipBtns.forEach((tipbtn) => {
 
 function totalTipAmount() {
   if (!customTip.value) {
-    return tipAmountVal.toFixed(2);
+    return (tipAmountVal / 100) * parseFloat(inputAmount.value).toFixed(2);
   } else {
-    return parseFloat(customTip.value).toFixed(2);
+    return (
+      (parseFloat(customTip.value) / 100) *
+      parseFloat(inputAmount.value).toFixed(2)
+    );
   }
 }
 
@@ -77,4 +80,5 @@ function resetBill() {
   inputAmount.value = "";
   customTip.value = "";
   people.value = "";
+  tipAmountVal = "";
 }
