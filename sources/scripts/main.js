@@ -8,6 +8,7 @@ let people = document.querySelector("#people");
 let tipValue = document.querySelector(".tip-value");
 let totalValue = document.querySelector(".total-value");
 let personBill = document.querySelector(".person-bill");
+let billContainer = document.querySelectorAll(".output-container > span");
 
 // generate bill button
 let generateBill = document.querySelector(".generate-bill");
@@ -75,6 +76,9 @@ generateBill.addEventListener("click", () => {
   if (inputAmount.value === "" || people.value === "") {
     alert("Empty input fields");
   } else {
+    billContainer.forEach((bill) => {
+      bill.style.display = "inline";
+    });
     renderOutput();
   }
 });
@@ -94,5 +98,8 @@ function resetBill() {
   tipAmountVal = "";
   buttons.forEach((btn) => {
     btn.style.border = "2px solid transparent";
+  });
+  billContainer.forEach((bill) => {
+    bill.style.display = "none";
   });
 }
