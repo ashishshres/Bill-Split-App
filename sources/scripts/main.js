@@ -29,6 +29,12 @@ tipBtns.forEach((tipbtn) => {
   });
 });
 
+customTip.addEventListener("input", () => {
+  buttons.forEach((btn) => {
+    btn.style.border = "2px solid transparent";
+  });
+});
+
 function totalTipAmount() {
   if (!customTip.value) {
     return (tipAmountVal / 100) * parseFloat(inputAmount.value).toFixed(2);
