@@ -38,12 +38,12 @@ customTip.addEventListener("input", () => {
 
 function totalTipAmount() {
   if (!customTip.value) {
-    return (tipAmountVal / 100) * parseFloat(inputAmount.value).toFixed(2);
+    return ((tipAmountVal / 100) * parseFloat(inputAmount.value)).toFixed(2);
   } else {
     return (
       (parseFloat(customTip.value) / 100) *
-      parseFloat(inputAmount.value).toFixed(2)
-    );
+      parseFloat(inputAmount.value)
+    ).toFixed(2);
   }
 }
 
