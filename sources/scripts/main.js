@@ -20,9 +20,11 @@ let buttons = document.querySelectorAll(".tip-btns button");
 
 tipBtns.forEach((tipbtn) => {
   tipbtn.addEventListener("click", (e) => {
+    // clear button highlights
     buttons.forEach((btn) => {
       btn.style.border = "2px solid transparent";
     });
+
     tipAmountVal = parseFloat(e.target.value);
     e.target.style.border = "2px solid salmon";
     customTip.value = "";
