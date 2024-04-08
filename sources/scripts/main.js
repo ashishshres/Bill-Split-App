@@ -33,6 +33,7 @@ tipBtns.forEach((tipbtn) => {
 customTip.addEventListener("input", () => {
   buttons.forEach((btn) => {
     btn.style.border = "2px solid transparent";
+    tipAmountVal = 0;
   });
 });
 
